@@ -66,6 +66,8 @@
                         .css('border', 'none')
                         .bind('keydown', function(e) {
                             switch(e.keyCode) {
+                                case 188: // ,
+                                case 32: // spacebar
                                 case 13: // enter
                                     addAddress($(this).parent(), $(this).val());
                                     $(this).remove();
